@@ -52,20 +52,22 @@ body {
     text-decoration: none;
     color: var(--secoundary-link-color);
 }
+
 .menu-link:hover,
 .menu-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
     color: var(--highlight-color);
 }
 
-/*footer styles: dark bacground */
+/*footer styles: dark background */
 .footer {
     background-color: var(--footer-background-color);
 }
 
-.address {
-    
+.address-container {
     text-decoration: none;
     /*font-family: Roboto;*/
     font-size: 14px;
@@ -74,10 +76,11 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-
     color: rgba(255, 255, 255, 1);
-
-
+}
+.address-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
