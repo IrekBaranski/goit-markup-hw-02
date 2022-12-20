@@ -1,8 +1,12 @@
+/*global styles,
+common to the entire html tree, 
+not all of them have been used*/
+
 :root {
     /*preselected colors */
     --text-color: #212121;
     --highlight-color: #2196F3;
-    --footer-background: #2f303a;
+    --footer-background-color: #2f303a;
     
 }
 body {
@@ -24,10 +28,17 @@ body {
     color:  #2196F3;
 }
 
+/*header styles*/
 
 .Menu {
     list-style-type: none;
 }
+
+/*footer styles*/
+
+
+
+/*main page styles*/
 
 /*remowe dots */
 .projects
