@@ -4,13 +4,13 @@ body {
     background-color: #FFFFFF;
 }
 .logo {
-    color: #000000;
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0.03em;
     text-align: left;
+    color: #000000;
 }
 .logo-Web {
     color: #2196F3;
@@ -20,5 +20,14 @@ body {
     --brand-color: #2196F3;
 
     --footer-background: #2f303a;
+    list-style-type: none;
 
   }
+.Menu {
+    list-style-type: none;
+}
+
+/*remowe dotsz */
+.projects-filters {
+    list-style-type: none;
+}
