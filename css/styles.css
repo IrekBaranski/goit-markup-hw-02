@@ -1,4 +1,4 @@
-/*global styles, common to the entire html tree, */
+/* ---------------   global styles, common to the entire html tree, */
 
 :root {
     /*preselected colors not all of them have been used*/
@@ -11,6 +11,7 @@
     --highlight-color: #2196F3;
     --footer-background-color: #2f303a;
     --primary-logo-color: #2196F3;
+    /*kolor button z portfolio #F5F4FA*/
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     
 }
 
-/*logo, + on light background, + on dark background*/
+/* ------------   logo, + on light background, + on dark background ---------------*/
 .logo {
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
@@ -84,7 +85,7 @@ body {
 }
 
 
-/*main page specyfic styles*/
+/*--------------  main page specyfic styles  ----------------------------*/
 
 .big-baner {
     /*position: absolute;*/
@@ -214,6 +215,90 @@ img {
     color: var(--secoundary-color);
 }
 
-/*portfolio page specyfic styles */
+/* ---------------------  portfolio page specyfic styles */
+
+.filters {
+    /*position: absolute;
+    width: 572px;
+    height: 54px;
+    left: 510px;
+    top: 174px;*/
+    
+    list-style-type: none;
+    /*font-family: Roboto;*/
+    
+  
+}
+.filter-button {
+    /*position: absolute;*/
+    height: 38px;
+    width: 114px;
+    left: 740px;
+    top: 174px;
+    border-radius: 4px;
+  
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+    
+    width: 121px;
+    height: 38px;
+    left: 510px;
+    top: 174px;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+
+/* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    
+}
+
+.projects {
+    list-style-type:none;
+}
+.project-container {
+    box-sizing: border-box;
+    height: 404px;
+    width: 370px;
+    left: 215px;
+    top: 262px;
+    border-radius: 0px;
+    
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+
+    
+}
+.project-container > img {
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    : 262px;
+
+}
+.project-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: var(--primary-color);
+
+}
+.projekt-filter {
+    
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    text-align: left;
 
 
+}
