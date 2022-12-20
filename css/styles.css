@@ -1,20 +1,27 @@
-/*global styles,
-common to the entire html tree, 
-not all of them have been used*/
+/*global styles, common to the entire html tree, */
 
 :root {
-    /*preselected colors */
-    --text-color: #212121;
+    /*preselected colors not all of them have been used*/
+
+    --primary-color: #212121;
+    --secoundary-color: #757575;
+    --primary-link-color: #212121;
+    --secoundary-link-color: #757575;
+    --background-color: #FFFFFF;
     --highlight-color: #2196F3;
     --footer-background-color: #2f303a;
-    
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
     background-color: #FFFFFF;
     
 }
+
+
+/*header styles*/
+
 .logo {
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
@@ -28,17 +35,32 @@ body {
     color:  #2196F3;
 }
 
-/*header styles*/
-
-.Menu {
+.menu-links,
+.contact-links {
     list-style-type: none;
 }
-
+.menu-link {
+    text-decoration: none;
+    color: var(--primary-link-color);
+}
+.contact-link {
+    text-decoration: none;
+    color: var(--secoundary-link-color);
+}
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--highlight-color);
+}
 /*footer styles*/
 
 
 
-/*main page styles*/
+/*main page specyfic styles*/
+
+
+/*portfolio page specyfic styles */
 
 /*remowe dots */
 .projects
