@@ -143,10 +143,77 @@ h1 {
     text-align:left
 
 }
-/*portfolio page specyfic styles */
 
-/*remowe dots */
-.projects
-.filters {
+h2 {
+    /*font-family: Roboto;*/
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+.boxes {
     list-style-type: none;
 }
+
+.our-team {
+   /* position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;*/
+    
+    background-color: #F5F4FA;
+    list-style-type: none;
+}
+.team-card {
+    /*position: absolute;*/
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1635px;
+
+    background: #FFFFFF;
+
+/* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+
+}
+/* !! dopracować img !!*/
+img {
+    /*: absolute;*/
+    width: 270px;
+    height: 260px;
+    left: 1115px;
+    top: 1635px;
+    border-radius: 0px;
+}
+.team-card-name {
+    /*font-family: Roboto;*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.team-card-role {
+    /*font-family: Roboto;*/
+    font-size: 16px;
+/*font-weight: 400;*/
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: var(--secoundary-color);
+}
+
+/*portfolio page specyfic styles */
+
+
