@@ -3,13 +3,22 @@ body {
     color: #212121;
     background-color: #FFFFFF;
 }
-.logo-WebStudio {
-    font-family: 'Raleway', sans-serif
-
+.logo {
+    color: #000000;
+    font-family: Raleway, Oleo Script, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.logo-Web {
+    color: #2196F3;
 }
 
 :root {
     --brand-color: #2196F3;
+
     --footer-background: #2f303a;
 
   }
