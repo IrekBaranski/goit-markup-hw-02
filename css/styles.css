@@ -1,5 +1,8 @@
 /* ---------------   global styles, common to the entire html tree, */
-
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     /*preselected colors not all of them have been used*/
 
