@@ -10,6 +10,7 @@
     --background-color: #FFFFFF;
     --highlight-color: #2196F3;
     --footer-background-color: #2f303a;
+    --primary-logo-color: #2196F3;
 }
 
 body {
@@ -19,21 +20,25 @@ body {
     
 }
 
-
-/*header styles*/
-
+/*logo, + on light background, + on dark background*/
 .logo {
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #000000;
+    color: #2196F3;
+    /*color: var(--primary-logo-color);*/
 }
-.logo-Web {
-    color:  #2196F3;
+.logo-Studio-on-light-background {
+    color:  #000000;
 }
+.logo-Studio-on-dark-background {
+    color:  #FFFFFF;
+}
+
+/*header styles: menu + contacts*/
 
 .menu-links,
 .contact-links {
@@ -53,8 +58,27 @@ body {
 .contact-link:focus {
     color: var(--highlight-color);
 }
-/*footer styles*/
 
+/*footer styles: dark bacground */
+.footer {
+    background-color: var(--footer-background-color);
+}
+
+.address {
+    
+    text-decoration: none;
+    /*font-family: Roboto;*/
+    font-size: 14px;
+    font-style: normal;
+    /*font-weight: 400;*/
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+    color: rgba(255, 255, 255, 1);
+
+
+}
 
 
 /*main page specyfic styles*/
