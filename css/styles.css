@@ -1,7 +1,15 @@
+:root {
+    /*preselected colors */
+    --text-color: #212121;
+    --highlight-color: #2196F3;
+    --footer-background: #2f303a;
+    
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
     background-color: #FFFFFF;
+    
 }
 .logo {
     font-family: Raleway, Oleo Script, sans-serif;
@@ -13,21 +21,16 @@ body {
     color: #000000;
 }
 .logo-Web {
-    color: #2196F3;
+    color:  #2196F3;
 }
 
-:root {
-    --brand-color: #2196F3;
 
-    --footer-background: #2f303a;
-    list-style-type: none;
-
-  }
 .Menu {
     list-style-type: none;
 }
 
-/*remowe dotsz */
-.projects-filters {
+/*remowe dots */
+.projects
+.filters {
     list-style-type: none;
 }
