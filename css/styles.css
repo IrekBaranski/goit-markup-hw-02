@@ -8,9 +8,12 @@
 
     --primary-color: #212121;
     --secoundary-color: #757575;
+    --primary-on-dark-background-color: rgba(255, 255, 255, 1); 
 
     --primary-link-color: #212121;
     --secoundary-link-color: #757575;
+    --address-container-color: rgba(255, 255, 255, 1);
+    --address-list-color: rgba(255, 255, 255, 0.6);
 
     --background-color: #FFFFFF;
     --highlight-color: #2196F3;
@@ -20,6 +23,10 @@
     --logo-color-on-light-background: #000000;
     --logo-color-on-dark-background: #FFFFFF;
     /*kolor button z portfolio #F5F4FA*/
+
+    --order-button-color: #2196F3;
+    --order-button-background-color: rgba(255, 255, 255, 1);
+   
 }
 
 body {
@@ -85,11 +92,11 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: rgba(255, 255, 255, 1);
+    color: var(--address-container-color);
 }
 .address-link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-list-color);
 }
 
 
@@ -103,17 +110,29 @@ body {
     top: 80px;
     
     
-    background: #2F303A;
+    background: var(--footer-background-color);
 }
-h1 {
+/* hedery- tytuły, nagłówki */ 
+.big-baner-title {
     /*font-family: Roboto;    */
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: var(--primary-on-dark-background-color);
 }
+h2 {
+    /*font-family: Roboto;*/
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+
 .order-button {
     /*position: absolute;*/
     width: 200px;
@@ -121,9 +140,9 @@ h1 {
     left: 700px;
     top: 430px;
 
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    background: var(--order-button-background-color);
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;*/
 
     font-family: Roboto;
     font-size: 16px;
@@ -131,7 +150,7 @@ h1 {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
+    color: var(--order-button-color);
     cursor: pointer;
 
 }
@@ -154,15 +173,7 @@ h1 {
 
 }
 
-h2 {
-    /*font-family: Roboto;*/
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
 
-}
 .boxes {
     list-style-type: none;
 }
