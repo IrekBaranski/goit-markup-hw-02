@@ -5,20 +5,21 @@
 }
 :root {
     /*preselected colors not all of them have been used*/
-
+    /*main page color*/
     --primary-color: #212121;
     --secoundary-color: #757575;
     --primary-on-dark-background-color: rgba(255, 255, 255, 1); 
 
-    --primary-link-color: #212121;
+    --primary-link-color: rgb(33, 33, 33);
     --secoundary-link-color: #757575;
     --address-container-color: rgba(255, 255, 255, 1);
     --address-list-color: rgba(255, 255, 255, 0.6);
 
     --background-color: #FFFFFF;
-    --highlight-color: #2196F3;
     --footer-background-color: #2f303a;
-    
+
+    --highlight-color: #2196F3;
+
     --primary-logo-color: #2196F3;
     --logo-color-on-light-background: #000000;
     --logo-color-on-dark-background: #FFFFFF;
@@ -38,6 +39,7 @@ body {
 
 /* ------------   logo, + on light background, + on dark background ---------------*/
 .logo {
+    text-decoration: none;
     font-family: Raleway, Oleo Script, sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -45,10 +47,11 @@ body {
     letter-spacing: 0.03em;
     text-align: left;
     color: var(--primary-logo-color);
+    
    
 }
 .logo-on-light-background {
-    color: var(--logo-on-light-background);
+    color: var(--logo-color-on-light-background);
 }
 .logo-on-dark-background {
     color: var(--logo-color-on-dark-background);
