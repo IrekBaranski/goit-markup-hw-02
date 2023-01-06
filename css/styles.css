@@ -5,29 +5,29 @@
 }
 :root {
     /*preselected colors not all of them have been used*/
-    /*main page color*/
-    --primary-color: #212121;
-    --secoundary-color: #757575;
-    --primary-on-dark-background-color: rgba(255, 255, 255, 1); 
-
-    --primary-link-color: rgb(33, 33, 33);
-    --secoundary-link-color: #757575;
-    --address-container-color: rgba(255, 255, 255, 1);
-    --address-list-color: rgba(255, 255, 255, 0.6);
-
-    --background-color: #FFFFFF;
-    --footer-background-color: #2f303a;
-
-    --highlight-color: #2196F3;
-
-    --primary-logo-color: #2196F3;
-    --logo-color-on-light-background: #000000;
-    --logo-color-on-dark-background: #FFFFFF;
-    /*kolor button z portfolio #F5F4FA*/
-
-    --order-button-color: #2196F3;
-    --order-button-background-color: rgba(255, 255, 255, 1);
    
+    --primary-color: rgb(33, 33, 33);
+    --secoundary-color: rgb(117, 117, 117);
+    --primary-color-on-dark-bg: rgba(255, 255, 255, 1);
+    --secondary-color-on-dark-bg: rgba(255, 255, 255, 0.6);
+
+    --primary-logo-color: rgba(33, 150, 243, 1);
+    --logo-color-on-light-bg: rgb(0, 0, 0);
+    --logo-color-on-dark-bg: rgb(255, 255, 255);
+    
+    --highlighted-color: rgba(33, 150, 243, 1);
+
+    --button-color: rgba(245, 244, 250, 1);
+    --highlighted-button-color: rgba(245, 244, 250, 1);
+
+    --bg-color: rgb(255, 255, 255);
+    --secoundary-bg-color: rgb(245, 244, 250);
+    --card-bg-color: rgb(238, 238, 238);
+    --footer-bg-color: rgb(47, 48, 58);
+
+    --border-color: rgb(238, 238, 238);
+    --border-menu-color: rgb(236, 236, 236);
+     
 }
 
 body {
