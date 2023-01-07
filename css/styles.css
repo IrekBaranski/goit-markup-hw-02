@@ -105,17 +105,17 @@ body {
     left: 0px;
     top: 80px;
        
-    background: var(--footer-background-color);
+    background: var(--footer-bg-color);
 }
 /* hedery- tytuły, nagłówki */ 
-.header-banner title {
+.header-banner .title {
     /*font-family: Roboto;    */
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--primary-on-dark-background-color);
+    color: var(--primary-color-on-dark-bg);
 }
 h2 {
     /*font-family: Roboto;*/
@@ -231,8 +231,11 @@ img {
 }
 
 /* ---------------------  portfolio page specyfic styles */
+.portfolio-projects {
+    background-color: var(--background-color);
+}
 
-.filters {
+.filter-buttons {
     /*position: absolute;
     width: 572px;
     height: 54px;
@@ -297,6 +300,9 @@ img {
     width: 370px;
     height: 294px;
     left: 215px;
+
+   
+
    
 }
 .project-title {
