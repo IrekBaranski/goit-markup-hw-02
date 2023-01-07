@@ -1,8 +1,8 @@
 /* ---------------   global styles, common to the entire html tree, */
-* {
+/** {
     margin: 0;
     padding: 0;
-}
+}*/
 :root {
     /*preselected colors not all of them have been used*/
    
@@ -15,12 +15,12 @@
     --logo-color-on-light-bg: rgb(0, 0, 0);
     --logo-color-on-dark-bg: rgb(255, 255, 255);
     
-    --highlighted-color: rgba(33, 150, 243, 1);
+    --hover-color: rgba(33, 150, 243, 1);
 
     --button-color: rgba(245, 244, 250, 1);
     --highlighted-button-color: rgba(245, 244, 250, 1);
 
-    --bg-color: rgb(255, 255, 255);
+    --primary-bg-color: rgb(255, 255, 255);
     --secoundary-bg-color: rgb(245, 244, 250);
     --card-bg-color: rgb(238, 238, 238);
     --footer-bg-color: rgb(47, 48, 58);
@@ -33,7 +33,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
-    background-color: var(--background-color);
+    background-color: var(--primary-bg-color);
     
 }
 
@@ -45,47 +45,44 @@ body {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-align: left;
+    /*text-align: left;*/
     color: var(--primary-logo-color);
     
    
 }
-.logo-on-light-background {
-    color: var(--logo-color-on-light-background);
-}
-.logo-on-dark-background {
-    color: var(--logo-color-on-dark-background);
-}
+.logo-on-light-bg {color: var(--logo-color-on-light-bg);}
+.logo-on-dark-bg {color: var(--logo-color-on-dark-bg);}
 
 /*header styles: menu + contacts*/
-
-.menu-links,
-.contact-links {
+.menu {
+    /*font-family: Roboto;*/
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    
+    border-color: var(--border-menu-color);
+}
+.nav {
+    list-style-type: none;    
+    color: var(--primary-color);
+}
+.contact {
     list-style-type: none;
+    color: var(--secoundary-color);
 }
-.menu-link {
-    text-decoration: none;
-    color: var(--primary-link-color);
-}
-.contact-link {
-    text-decoration: none;
-    color: var(--secoundary-link-color);
-}
-
-.menu-link:hover,
-.menu-link:focus,
-.contact-link:hover,
-.contact-link:focus,
-.address-link:hover,
-.address-link:focus {
-    color: var(--highlight-color);
-}
-
 /*footer styles: dark background */
 .footer {
-    background-color: var(--footer-background-color);
+    color: var(--primary-color-on-dark-bg);
+    background-color: var(--footer-bg-color);
 }
+.link {text-decoration: none;}
+.footer .link{ color: var(--secondary-color-on-dark-bg);}
 
+.link:hover,
+.link:focus {
+    color: var(--hover-color);
+}
 .address-container {
     text-decoration: none;
     /*font-family: Roboto;*/
@@ -95,11 +92,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--address-container-color);
-}
-.address-link {
-    text-decoration: none;
-    color: var(--address-list-color);
+    color: var(--primary-color-on-dark-bg); 
 }
 
 
@@ -304,8 +297,7 @@ img {
     width: 370px;
     height: 294px;
     left: 215px;
-    : 262px;
-
+   
 }
 .project-title {
     font-size: 18px;
