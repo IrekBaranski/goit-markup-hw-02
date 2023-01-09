@@ -6,28 +6,31 @@
 :root {
     /*preselected colors not all of them have been used*/
    
-    --primary-color: rgb(33, 33, 33);
-    --secoundary-color: rgb(117, 117, 117);
-    --primary-color-on-dark-bg: rgba(255, 255, 255, 1);
-    --secondary-color-on-dark-bg: rgba(255, 255, 255, 0.6); 
-
-    --primary-logo-color: rgba(33, 150, 243, 1);
-    --logo-color-on-light-bg: rgb(0, 0, 0);
-    --logo-color-on-dark-bg: rgb(255, 255, 255);
+    --first-l-black-color: rgb(33, 33, 33);
+    --secound-dark-grey-color: rgb(117, 117, 117);
+    --white-color-on-dark-bg: rgba(255, 255, 255, 1);
+    --grey-color-on-dark-bg: rgba(255, 255, 255, 0.6); 
+    --brand-blue-color: rgba(33, 150, 243, 1);
     
-    --hover-color: rgba(33, 150, 243, 1);
+    --black-logo-on-light-bg: rgba(0, 0, 0, 1);
+    --white-logo-on-dark-bg: rgba(255, 255, 255, 1);
+    
+    --hover-color: var(--brand-blue-color);
+    
+    --mp-button-color: var(--color-white-on-dark-bg);
+    --mp-button-bg-color: var(--brand-blue-color);
 
-    --portfolio-button-color: rgba(245, 244, 250, 1);
-    --button-color-on-dark-bg: var(--primary-logo-color);
-    --hover-button-color: rgba(245, 244, 250, 1);
-
-    --primary-bg-color: rgb(255, 255, 255);
-    --secoundary-bg-color: rgb(245, 244, 250);
-    --card-bg-color: rgb(238, 238, 238);
+    --portfolio-button-bg-color: rgba(245, 244, 250, 1);
+    
+    /*backgroun colors*/
+    --first-white-bg-color: rgb(255, 255, 255);
+    --secound-white-bg-color: rgb(245, 244, 250);
+    --third-white-bg-color: rgb(238, 238, 238);
     --footer-bg-color: rgb(47, 48, 58);
 
-    --border-color: rgb(238, 238, 238);
-    --border-menu-color: rgb(236, 236, 236);
+    --white-border-color: rgb(238, 238, 238);
+    --white-border-menu-color: rgb(236, 236, 236);
+    
      
 }
 
@@ -38,21 +41,6 @@ body {
     
 }
 
-/* ------------   logo, + on light background, + on dark background ---------------*/
-.logo {
-    text-decoration: none;
-    font-family: Raleway, Oleo Script, sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    /*text-align: left;*/
-    color: var(--primary-logo-color);
-    
-   
-}
-.logo-on-light-bg {color: var(--logo-color-on-light-bg);}
-.logo-on-dark-bg {color: var(--logo-color-on-dark-bg);}
 
 /*header styles: menu + contacts*/
 .menu {
@@ -64,6 +52,21 @@ body {
     
     border-color: var(--border-menu-color);
 }
+/* ------------   logotype classes + on light background, + on dark background ---------------*/
+.logotype{
+    text-decoration: none;
+    font-family: Raleway, Oleo Script, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    /*text-align: left;*/
+}
+.logotype--brand-color {color: var(--brand-blue-color);}
+.logotype--on-light-bg {color: var(--logo-color-on-light-bg);}
+.logo-on-dark-bg {color: var(--logo-color-on-dark-bg);}
+
+
 .nav {
     list-style-type: none;    
     color: var(--primary-color);
