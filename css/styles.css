@@ -4,40 +4,38 @@
     padding: 0;
 }*/
 :root {
-    /*preselected colors not all of them have been used*/
-   
-    --first-l-black-color: rgb(33, 33, 33);
-    --secound-dark-grey-color: rgb(117, 117, 117);
-    --white-color-on-dark-bg: rgba(255, 255, 255, 1);
-    --grey-color-on-dark-bg: rgba(255, 255, 255, 0.6); 
-    --brand-blue-color: rgba(33, 150, 243, 1);
+    /*content colors used in the page layout */
+     
+    --mine-color-black : rgb(33, 33, 33,1);
+    --secound-color-dark-grey: rgb(117, 117, 117);
+    --mine-color-on-dark-bg-white: rgba(255, 255, 255, 1);
+    --secound-color-dark-bg-white-06a: rgba(255, 255, 255, 0.6); 
     
-    --black-logo-on-light-bg: rgba(0, 0, 0, 1);
-    --white-logo-on-dark-bg: rgba(255, 255, 255, 1);
+    /* brand color is blue rgb(33, 150, 243), used to: hover links */
+    --brand-color-blue: rgb(33, 150, 243);
     
-    --hover-color: var(--brand-blue-color);
+    --logotype-on-light-bg-black: rgb(0, 0, 0);
+    --logotype-on-dark-bg-white: rgb(255, 255, 255);
     
-    --mp-button-color: var(--color-white-on-dark-bg);
-    --mp-button-bg-color: var(--brand-blue-color);
+     /*background colors used in the page layout*/
 
-    --portfolio-button-bg-color: rgba(245, 244, 250, 1);
-    
-    /*backgroun colors*/
-    --first-white-bg-color: rgb(255, 255, 255);
-    --secound-white-bg-color: rgb(245, 244, 250);
-    --third-white-bg-color: rgb(238, 238, 238);
-    --footer-bg-color: rgb(47, 48, 58);
+    --mine-bg-color-white: rgb(255, 255, 255);
+    --secound-bg-color-white2: rgb(245, 244, 250);
+    --third-bg-color-white3: rgb(238, 238, 238);
+    --mine-dark-bg-color-: rgb(47, 48, 58);
 
-    --white-border-color: rgb(238, 238, 238);
-    --white-border-menu-color: rgb(236, 236, 236);
+    /*border colors used in the page layout*/
+
+    --border-color-white1: rgb(238, 238, 238);
+    --border-color-white2: rgb(236, 236, 236);
     
      
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
-    background-color: var(--primary-bg-color);
+    color: var(--prime-color-l-black);
+    background-color: var(--white1-bg-color);
     
 }
 
