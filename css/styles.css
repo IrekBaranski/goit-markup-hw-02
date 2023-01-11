@@ -6,7 +6,7 @@
 :root {
     /*preselected colors not all of them have been used*/
    
-    --first-l-black-color: rgb(33, 33, 33);
+    --prime-color-l-black: rgb(33, 33, 33);
     --secound-dark-grey-color: rgb(117, 117, 117);
     --white-color-on-dark-bg: rgba(255, 255, 255, 1);
     --grey-color-on-dark-bg: rgba(255, 255, 255, 0.6); 
@@ -23,8 +23,8 @@
     --portfolio-button-bg-color: rgba(245, 244, 250, 1);
     
     /*backgroun colors*/
-    --first-white-bg-color: rgb(255, 255, 255);
-    --secound-white-bg-color: rgb(245, 244, 250);
+    --white1-bg-color: rgb(255, 255, 255);
+    --white2-bg-color: rgb(245, 244, 250);
     --third-white-bg-color: rgb(238, 238, 238);
     --footer-bg-color: rgb(47, 48, 58);
 
@@ -36,8 +36,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-color);
-    background-color: var(--primary-bg-color);
+    color: var(--);
+    background-color: var(--white1-bg-color);
     
 }
 
