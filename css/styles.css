@@ -19,12 +19,13 @@
     
      /*background colors used in the page layout*/
 
-    --mine-bg-color-white: rgb(255, 255, 255);
-    --secound-bg-color-white2: rgb(245, 244, 250);
-    --third-bg-color-white3: rgb(238, 238, 238);
-    --mine-dark-bg-color-: rgb(47, 48, 58);
-
-    /*border colors used in the page layout*/
+    --portfolio-button-bg-color: rgba(245, 244, 250, 1);
+    
+    /*backgroun colors*/
+    --first-white-bg-color: rgb(255, 255, 255);
+    --secound-white-bg-color: rgb(245, 244, 250);
+    --third-white-bg-color: rgb(238, 238, 238);
+    --footer-bg-color: rgb(47, 48, 58);
 
     --border-color-white1: rgb(238, 238, 238);
     --border-color-white2: rgb(236, 236, 236);
@@ -34,8 +35,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--prime-color-l-black);
-    background-color: var(--white1-bg-color);
+    color: var(--primary-color);
+    background-color: var(--primary-bg-color);
     
 }
 
