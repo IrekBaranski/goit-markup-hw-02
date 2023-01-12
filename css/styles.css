@@ -21,11 +21,11 @@
 
     --portfolio-button-bg-color: rgba(245, 244, 250, 1);
     
-    /*backgroun colors*/
+    /*background colors*/
     --mine-bg-color-white: rgb(255, 255, 255);
     --secound-bg-color-white: rgb(245, 244, 250);
     /*--third-bg-color-white: rgb(238, 238, 238);*/
-    --dark-bg-color-black: rgb(47, 48, 58);
+    --dark-bg-color-black1: rgb(47, 48, 58);
 
     --border-color-white1: rgb(238, 238, 238);
     --border-color-white2: rgb(236, 236, 236);
@@ -35,7 +35,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--mine-color-black);
-    background-color: var(-);
+    background-color: var(--mine-bg-color-white);
     
 }
 
@@ -48,7 +48,7 @@ body {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     
-    border-color: var(--border-menu-color);
+    border-color: var(--border-color-white2);
 }
 /* ------------   logotype classes + on light background, + on dark background ---------------*/
 .logotype{
@@ -60,23 +60,25 @@ body {
     letter-spacing: 0.03em;
     /*text-align: left;*/
 }
-.logotype--brand-color {color: var(--brand-blue-color);}
-.logotype--on-light-bg {color: var(--logo-color-on-light-bg);}
-.logo-on-dark-bg {color: var(--logo-color-on-dark-bg);}
+.logotype--brand-color {color: var(--brand-color-blue);}
+.logotype--on-light-bg {color: var(--logotype-on-light-bg-black);}
+.logotype--on-dark-bg {color: var(--logotype-on-dark-bg-white);}
 
 
 .nav {
     list-style-type: none;    
-    color: var(--primary-color);
+    /*color: ;*/
 }
 .contact {
     list-style-type: none;
-    color: var(--secoundary-color);
+    color: var(--secound-color-dark-grey);
 }
 /*footer styles: dark background */
 .footer {
+    
+    background-color: var(--dark-bg-color-black);
     color: var(--primary-color-on-dark-bg);
-    background-color: var(--footer-bg-color);
+    
 }
 .link {text-decoration: none;}
 .footer .link{ color: var(--secondary-color-on-dark-bg);}
