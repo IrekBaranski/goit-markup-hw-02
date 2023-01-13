@@ -24,7 +24,7 @@
     /*background colors*/
     --mine-bg-color-white: rgb(255, 255, 255);
     --secound-bg-color-white: rgb(245, 244, 250);
-    /*--third-bg-color-white: rgb(238, 238, 238);*/
+
     --dark-bg-color-black1: rgb(47, 48, 58);
 
     --border-color-white1: rgb(238, 238, 238);
@@ -33,6 +33,8 @@
 }
 
 body {
+    height: auto;
+    width: 1600px;
     font-family: 'Roboto', sans-serif;
     color: var(--mine-color-black);
     background-color: var(--mine-bg-color-white);
@@ -66,7 +68,8 @@ body {
 
 
 .nav {
-    list-style-type: none;    
+    list-style-type: none;
+    color: var(--mine-color-black);    
     /*color: ;*/
 }
 .contact {
@@ -76,16 +79,23 @@ body {
 /*footer styles: dark background */
 .footer {
     
-    background-color: var(--dark-bg-color-black);
-    color: var(--primary-color-on-dark-bg);
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+    padding: 215px;
+    background-color: var(--dark-bg-color-black1);
+    color: var(--mine-color-on-dark-bg-white);
     
 }
-.link {text-decoration: none;}
-.footer .link{ color: var(--secondary-color-on-dark-bg);}
+.link {text-decoration: none;
+    cursor: pointer;
+}
+.footer .link{ color: var(--secound-color-dark-bg-white-06a);}
 
 .link:hover,
 .link:focus {
-    color: var(--hover-color);
+    color: var(--brand-color-blue);
 }
 .address-container {
     text-decoration: none;
@@ -96,62 +106,43 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--primary-color-on-dark-bg); 
+    color: var(--mine-color-on-dark-bg-white); 
 }
 
 
 /*--------------  main page specyfic styles  ----------------------------*/
 
-.header-banner{
-    /*position: absolute;*/
+.header {
     width: 1600px;
-    height: 600px;
+    /*height: 600px;*/
     left: 0px;
     top: 80px;
-       
-    background: var(--footer-bg-color);
+    background-color: var(--dark-bg-color-black1);
 }
-/* hedery- tytuły, nagłówki */ 
-.header-banner .title {
-    /*font-family: Roboto;    */
+.header__slogan {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--primary-color-on-dark-bg);
+    color: var(--mine-color-on-dark-bg-white);
 }
-h2 {
-    /*font-family: Roboto;*/
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-}
-
-
-.order-button {
-    /*position: absolute;*/
+.header__button {
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
 
-    background: var(--order-button-background-color);
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;*/
-
+    background: var(--brand-color-blue);
+   
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--order-button-color);
+    color: var(--mine-color-on-dark-bg-white);
     cursor: pointer;
-
 }
 
 .features {
@@ -160,35 +151,41 @@ h2 {
     height: 101px;
     left: 215px;
     top: 774px;*/
-
 }
-.feature-title {
+.feature__name {
     /*font-family: Roboto;*/
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-align:left
-
+}
+.feature__description { 
+    color: var(--secound-color-dark-grey);
 }
 
-
-.boxes {
-    list-style-type: none;
+.gallery {list-style-type: none;}
+.gallery__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center
 }
-
-.our-team {
-   /* position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1449px;*/
-    
-    background-color: #F5F4FA;
-    list-style-type: none;
+.team-section {
+    width: auto;
+    height: auto;
+    background-color: var(--secound-bg-color-white);
 }
+.team-section__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center
+}
+.team-card__list { list-style-type: none;}
 .team-card {
-    /*position: absolute;*/
     width: 270px;
     height: 368px;
     left: 215px;
@@ -196,44 +193,34 @@ h2 {
 
     background: #FFFFFF;
 
-/* material shadow v1 */
-
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    
-    box-shadow: 0px 2px 1px 0px #00000033;
-    box-shadow: 0px 1px 1px 0px #00000024;
-    box-shadow: 0px 1px 3px 0px #0000001F;
-
 }
-/* !! dopracować img !!*/
-img {
-    /*: absolute;*/
-    width: 270px;
-    height: 260px;
-    left: 1115px;
-    top: 1635px;
-    border-radius: 0px;
+.team-card__caption{
+    width: auto;
+    height: auto;
+        
 }
-.team-card-name {
+.team-card__name {
     /*font-family: Roboto;*/
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    
 }
-.team-card-role {
-    /*font-family: Roboto;*/
+.team-card__description {
     font-size: 16px;
 /*font-weight: 400;*/
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
 
-    color: var(--secoundary-color);
+    color: var(--secound-color-dark-grey);
 }
 
+/*----------------------------------------------------------*/
 /* ---------------------  portfolio page specyfic styles */
 .portfolio-projects {
     background-color: var(--background-color);
