@@ -222,59 +222,50 @@ body {
 
 /*----------------------------------------------------------*/
 /* ---------------------  portfolio page specyfic styles */
-.portfolio-projects {
-    background-color: var(--background-color);
+.portfolio-gallery {
+    font-family: 'Roboto', sans-serif;
+    color: var(--mine-color-black);
+    background-color: var(--mine-bg-color-white);
 }
 
-.filter-buttons {
-    /*position: absolute;
-    width: 572px;
-    height: 54px;
-    left: 510px;
-    top: 174px;*/
-    
+.portfolio__filter {
     list-style-type: none;
-    /*font-family: Roboto;*/
-    
-  
 }
-.filter-button {
-    /*position: absolute;*/
+.portfolio__filter-btn{
     height: 38px;
     width: 114px;
     left: 740px;
     top: 174px;
     border-radius: 4px;
   
-
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--mine-color-black);
+    background-color: var(--secound-bg-color-white);
     cursor: pointer;
 }
-.filter-button:hover,
-.filter-button:focus {
+.portfolio__filter-btn:hover,
+.portfolio__filter-btn:focus {
     
     width: 121px;
     height: 38px;
     left: 510px;
     top: 174px;
-    background-color: var(--highlight-color);
-    color: var(--background-color);
-
+    background-color: var(--brand-color-blue);
+    color: var(--mine-color-on-dark-bg-white);
 /* shadow-middle */
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px var(--brand-color-blue), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    
 }
 
-.projects {
+.portfolio-cards {
     list-style-type:none;
 }
-.project-container {
+.portfolio-card {
     box-sizing: border-box;
     height: 404px;
     width: 370px;
@@ -282,35 +273,21 @@ body {
     top: 262px;
     border-radius: 0px;
     
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-
-    
+    border: 1px solid var(--border-color-white2);   
 }
-.project-container > img {
-    width: 370px;
-    height: 294px;
-    left: 215px;
-
-   
-
-   
-}
-.project-title {
+.portfolio-card__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
-
 }
-.projekt-filter {
+.portfolio-card__label {
     
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     text-align: left;
-
-
+    color: var(--secound-color-dark-grey);
 }
